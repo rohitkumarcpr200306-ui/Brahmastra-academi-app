@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Study Notes | Brahmastra Academy</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f2f4fa;font-family:Arial;color:#172448}
+header{background:#14264e;color:white;padding:22px;text-align:center}
+header h2{color:#ffd45c}
+.container{padding:18px}
+select{width:100%;padding:13px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
+.card{background:white;padding:18px;margin:14px 0;border-radius:12px;box-shadow:0 2px 9px #ddd}
+button{background:#14264e;color:white;border:0;padding:11px 17px;border-radius:7px}
+a{color:white;text-decoration:none}
+.back{display:inline-block;background:#14264e;padding:11px;border-radius:7px}
+</style>
+</head>
+<body>
+<header>
+<h2>BRAHMASTRA ACADEMY</h2>
+<p>Digital Study Materials</p>
+</header>
+
+<div class="container">
+<h3>My Study Notes</h3>
+
+<select id="class">
+<option value="">Select Class</option>
+<option>Class 6</option>
+<option>Class 7</option>
+<option>Class 8</option>
+<option>Class 9</option>
+<option>Class 10</option>
+<option>Class 11</option>
+<option>Class 12</option>
+</select>
+
+<select id="subject">
+<option value="">Select Subject</option>
+<option>Maths</option>
+<option>Science</option>
+<option>Hindi</option>
+<option>English</option>
+<option>Social Science</option>
+</select>
+
+<div class="card">
+<h3>📚 PDF Study Materials</h3>
+<p>आपके चुने हुए कोर्स के PDF Notes यहाँ दिखाई देंगे।</p>
+<p>अभी कोई PDF उपलब्ध नहीं है।</p>
+</div>
+
+<p><a class="back" href="student.html">Back to Dashboard</a></p>
+</div>
+</body>
+</html>
