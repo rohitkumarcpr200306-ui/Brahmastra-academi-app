@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brahmastra Academy</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#f4f6fb;color:#172033}
+header{background:#101c3c;color:white;padding:25px 18px;text-align:center}
+header h1{margin:0;color:#ffd45c}
+header p{margin-bottom:0}
+nav{background:#182b55;padding:14px;text-align:center}
+nav a{color:white;text-decoration:none;margin:10px;font-size:14px}
+.hero{padding:35px 20px;text-align:center;background:white}
+.hero h2{color:#172d60}
+.btn{display:inline-block;background:#e6a800;color:#111;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:bold}
+.container{padding:20px}
+.card{background:white;padding:20px;margin:14px 0;border-radius:12px;box-shadow:0 2px 9px #ddd}
+.card h3{color:#172d60}
+footer{background:#101c3c;color:white;text-align:center;padding:20px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>BRAHMASTRA ACADEMY</h1>
+<p>Education For Success | Rohit Sir</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#courses">Courses</a>
+<a href="#notes">Notes</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Welcome to Brahmastra Academy</h2>
+<p>अब पढ़ाई होगी आसान और सफलता होगी आपके नाम!</p>
+<a class="btn" href="#courses">Explore Courses</a>
+</section>
+
+<div class="container" id="courses">
+<h2>Our Courses</h2>
+<div class="card">
+<h3>Class 10 Maths</h3>
+<p>Video Lectures और Complete Notes</p>
+<a class="btn" href="#">View Course</a>
+</div>
+<div class="card">
+<h3>Class 10 Science</h3>
+<p>वीडियो क्लास और PDF Notes</p>
+<a class="btn" href="#">View Course</a>
+</div>
+<div class="card">
+<h3>Class 9–12 Courses</h3>
+<p>सभी विषयों की पढ़ाई</p>
+<a class="btn" href="#">View Courses</a>
+</div>
+</div>
+
+<div class="container" id="notes">
+<div class="card">
+<h3>Study Materials</h3>
+<p>PDF Notes और Online Study Material</p>
+</div>
+</div>
+
+<div class="container" id="contact">
+<div class="card">
+<h3>Contact Us</h3>
+<p>Brahmastra Academy Nagra</p>
+<p>Learn Today, Lead Tomorrow!</p>
+</div>
+</div>
+
+<footer>
+<p>© 2026 Brahmastra Academy Nagra</p>
+<p>Powered by Rohit Sir</p>
+</footer>
+
+</body>
+</html>
