@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Online Test | Brahmastra Academy</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f2f4fa;font-family:Arial;color:#172448}
+header{background:#14264e;color:white;padding:22px;text-align:center}
+header h2{color:#ffd45c}
+.container{padding:18px}
+.card{background:white;padding:18px;margin:15px 0;border-radius:12px;box-shadow:0 2px 9px #ddd}
+select,input{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:7px}
+button{background:#14264e;color:white;border:0;padding:12px 20px;border-radius:7px}
+a{color:white;text-decoration:none}
+.back{display:inline-block;background:#14264e;padding:11px;border-radius:7px}
+</style>
+</head>
+<body>
+<header>
+<h2>BRAHMASTRA ACADEMY</h2>
+<p>Online Examination Portal</p>
+</header>
+
+<div class="container">
+<div class="card">
+<h3>📝 Online Test</h3>
+<input id="student" placeholder="Student Name">
+<select id="class">
+<option value="">Select Class</option>
+<option>Class 9</option>
+<option>Class 10</option>
+<option>Class 11</option>
+<option>Class 12</option>
+</select>
+<select id="subject">
+<option value="">Select Subject</option>
+<option>Maths</option>
+<option>Science</option>
+<option>Hindi</option>
+<option>Social Science</option>
+</select>
+<p>अभी कोई टेस्ट उपलब्ध नहीं है।</p>
+<button onclick="startTest()">Start Test</button>
+<p id="message"></p>
+</div>
+<p><a class="back" href="student.html">Back to Dashboard</a></p>
+</div>
+
+<script>
+function startTest(){
+let name=document.getElementById("student").value;
+let cls=document.getElementById("class").value;
+let subject=document.getElementById("subject").value;
+if(!name||!cls||!subject){
+alert("कृपया सभी जानकारी भरें।");
+return;
+}
+document.getElementById("message").innerText=
+"नमस्ते "+name+"! "+cls+" "+subject+" का टेस्ट अभी उपलब्ध नहीं है।";
+}
+</script>
+</body>
+</html>
