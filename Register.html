@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Registration | Brahmastra Academy</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#eef1f8;font-family:Arial;padding:20px}
+.box{max-width:430px;margin:25px auto;background:white;padding:25px;border-radius:15px;box-shadow:0 5px 20px #ccd2df}
+h2{text-align:center;color:#14264e}
+input,select{width:100%;padding:13px;margin:9px 0;border:1px solid #ccc;border-radius:8px;font-size:15px}
+button{width:100%;padding:14px;background:#14264e;color:white;border:0;border-radius:8px;font-size:16px}
+p{text-align:center}
+a{color:#14264e}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>BRAHMASTRA ACADEMY</h2>
+<p>Student Registration</p>
+<form id="registerForm">
+<input type="text" placeholder="Student Name" required>
+<input type="tel" placeholder="Mobile Number" required>
+<input type="email" placeholder="Email Address" required>
+<select required>
+<option value="">Select Class</option>
+<option>Class 6</option>
+<option>Class 7</option>
+<option>Class 8</option>
+<option>Class 9</option>
+<option>Class 10</option>
+<option>Class 11</option>
+<option>Class 12</option>
+</select>
+<input type="password" placeholder="Create Password" required minlength="8">
+<button type="submit">Create Account</button>
+</form>
+<p><a href="login.html">Already have an account? Login</a></p>
+<p><a href="index.html">Home</a></p>
+</div>
+<script>
+document.getElementById("registerForm").addEventListener("submit",function(e){
+e.preventDefault();
+alert("Registration system ko Supabase se connect karna abhi baki hai.");
+});
+</script>
+</body>
+</html>
