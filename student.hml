@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Dashboard | Brahmastra Academy</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f2f4fa;font-family:Arial;color:#182448}
+header{background:#14264e;color:white;padding:22px}
+header h2{color:#ffd45c;margin:0}
+header p{margin-bottom:0}
+.container{padding:18px}
+.welcome{background:white;padding:20px;border-radius:12px;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.card{background:white;padding:20px 12px;border-radius:12px;text-align:center;box-shadow:0 2px 8px #ddd}
+.card h3{font-size:16px;color:#14264e}
+.card p{font-size:13px;color:#666}
+.card a{display:inline-block;background:#14264e;color:white;padding:9px 13px;border-radius:7px;text-decoration:none;font-size:13px}
+footer{text-align:center;padding:20px;color:#777}
+@media(max-width:350px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<h2>BRAHMASTRA ACADEMY</h2>
+<p>Student Dashboard | Rohit Sir</p>
+</header>
+
+<div class="container">
+<div class="welcome">
+<h2>Welcome Student!</h2>
+<p>आपकी पढ़ाई, आपकी सफलता।</p>
+</div>
+
+<h3>My Learning</h3>
+<div class="grid">
+
+<div class="card">
+<h3>📚 My Courses</h3>
+<p>अपने कोर्स देखें</p>
+<a href="courses.html">Open</a>
+</div>
+
+<div class="card">
+<h3>🎬 Video Lectures</h3>
+<p>अपनी वीडियो क्लास देखें</p>
+<a href="videos.html">Open</a>
+</div>
+
+<div class="card">
+<h3>📄 PDF Notes</h3>
+<p>Study Material डाउनलोड करें</p>
+<a href="notes.html">Open</a>
+</div>
+
+<div class="card">
+<h3>📝 Online Test</h3>
+<p>अपना टेस्ट दें</p>
+<a href="test.html">Open</a>
+</div>
+
+<div class="card">
+<h3>🏆 My Results</h3>
+<p>टेस्ट का परिणाम देखें</p>
+<a href="results.html">Open</a>
+</div>
+
+<div class="card">
+<h3>👤 My Profile</h3>
+<p>अपनी जानकारी देखें</p>
+<a href="profile.html">Open</a>
+</div>
+
+</div>
+</div>
+
+<footer>
+<p>© 2026 Brahmastra Academy Nagra</p>
+</footer>
+
+</body>
+</html>
