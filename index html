@@ -81,5 +81,19 @@ footer{background:#101c3c;color:white;text-align:center;padding:20px}
 <p>Powered by Rohit Sir</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+const SUPABASE_URL = "https://diluzqnnokihxorxwxbj.supabase.co";
+const SUPABASE_KEY = "sb_publishable_C5bq9J5oBoX-99yDP7-OcA_L-EifE1y";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+
+console.log("Brahmastra Academy Supabase Connected");
+</script>
+
 </body>
 </html>
