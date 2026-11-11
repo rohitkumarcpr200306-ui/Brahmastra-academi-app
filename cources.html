@@ -8,90 +8,79 @@
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#f2f4fa;font-family:Arial;color:#172448}
-header{background:#14264e;color:white;padding:24px;text-align:center}
+header{background:#14264e;color:white;padding:22px;text-align:center}
 header h2{color:#ffd45c}
-.container{padding:18px}
-.course{
-background:white;margin:15px 0;padding:20px;
-border-radius:13px;box-shadow:0 3px 10px #ddd
-}
+.container{padding:18px;max-width:700px;margin:auto}
+.course{background:white;margin:15px 0;padding:20px;border-radius:13px;box-shadow:0 3px 10px #ddd}
 .course h3{color:#14264e}
-.course p{color:#666}
-.tag{display:inline-block;background:#fff0bd;padding:6px 10px;border-radius:5px;font-size:12px}
-button{
-background:#14264e;color:white;border:0;
-padding:11px 18px;border-radius:7px;font-size:14px
-}
-a{color:white;text-decoration:none}
-.back{display:inline-block;background:#14264e;padding:10px 15px;border-radius:7px}
+.tag{background:#fff0bd;padding:6px 10px;border-radius:5px;font-size:12px}
+button,.back{background:#14264e;color:white;border:0;padding:12px 18px;border-radius:7px;font-size:14px;text-decoration:none;display:inline-block}
+button{cursor:pointer}
+.details{display:none;background:white;padding:20px;border-radius:13px;margin-top:20px}
+.price{font-size:23px;color:#087a39;font-weight:bold}
 </style>
 </head>
 <body>
-
 <header>
 <h2>BRAHMASTRA ACADEMY</h2>
 <p>Learn Today, Lead Tomorrow</p>
 </header>
 
 <div class="container">
+<div id="courseList">
 <h2>Our Courses</h2>
 <p>अपनी कक्षा चुनें और पढ़ाई शुरू करें।</p>
-
-<div class="course">
-<span class="tag">Class 6</span>
-<h3>Class 6 Complete Course</h3>
-<p>सभी विषयों की पढ़ाई और Notes</p>
-<button onclick="enroll('Class 6')">View Course</button>
+<div id="list"></div>
+<a class="back" href="student.html">Back to Dashboard</a>
 </div>
 
-<div class="course">
-<span class="tag">Class 7</span>
-<h3>Class 7 Complete Course</h3>
-<p>सभी विषयों की पढ़ाई और Notes</p>
-<button onclick="enroll('Class 7')">View Course</button>
+<div class="details" id="details">
+<h2 id="courseTitle"></h2>
+<p id="courseDescription"></p>
+<h3>इस कोर्स में मिलेगा:</h3>
+<ul>
+<li>वीडियो क्लास</li>
+<li>PDF Notes</li>
+<li>Online Test</li>
+<li>अध्यायवार पढ़ाई</li>
+</ul>
+<p class="price" id="coursePrice"></p>
+<p>Enrollment और Online Payment की सुविधा अभी तैयार की जा रही है।</p>
+<button onclick="backToCourses()">Back to Courses</button>
 </div>
-
-<div class="course">
-<span class="tag">Class 8</span>
-<h3>Class 8 Complete Course</h3>
-<p>सभी विषयों की पढ़ाई और Notes</p>
-<button onclick="enroll('Class 8')">View Course</button>
-</div>
-
-<div class="course">
-<span class="tag">Class 9</span>
-<h3>Class 9 Complete Course</h3>
-<p>सभी विषयों की पढ़ाई और Notes</p>
-<button onclick="enroll('Class 9')">View Course</button>
-</div>
-
-<div class="course">
-<span class="tag">Class 10</span>
-<h3>Class 10 Complete Course</h3>
-<p>Maths, Science, Hindi और Social Science</p>
-<button onclick="enroll('Class 10')">View Course</button>
-</div>
-
-<div class="course">
-<span class="tag">Class 11</span>
-<h3>Class 11 Complete Course</h3>
-<p>Science, Arts और Commerce</p>
-<button onclick="enroll('Class 11')">View Course</button>
-</div>
-
-<div class="course">
-<span class="tag">Class 12</span>
-<h3>Class 12 Complete Course</h3>
-<p>Science, Arts और Commerce</p>
-<button onclick="enroll('Class 12')">View Course</button>
-</div>
-
-<p><a class="back" href="student.html">Back to Dashboard</a></p>
 </div>
 
 <script>
-function enroll(course){
-alert(course+" चुना गया है। Enrollment और Payment System जोड़ना बाकी है।");
+const classes = [
+"Class 6","Class 7","Class 8","Class 9",
+"Class 10","Class 11","Class 12"
+];
+
+const list = document.getElementById("list");
+
+classes.forEach(c => {
+list.innerHTML += `
+<div class="course">
+<span class="tag">${c}</span>
+<h3>${c} Complete Course</h3>
+<p>वीडियो क्लास, Notes और Online Test</p>
+<button onclick="viewCourse('${c}')">View Course</button>
+</div>`;
+});
+
+function viewCourse(course){
+document.getElementById("courseList").style.display="none";
+document.getElementById("details").style.display="block";
+document.getElementById("courseTitle").innerText=course+" Complete Course";
+document.getElementById("courseDescription").innerText=
+course+" के सभी विषयों की पढ़ाई Brahmastra Academy Nagra में होगी।";
+document.getElementById("coursePrice").innerText=
+"कोर्स की कीमत जल्द घोषित होगी";
+}
+
+function backToCourses(){
+document.getElementById("details").style.display="none";
+document.getElementById("courseList").style.display="block";
 }
 </script>
 </body>
